@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YWP - Portfolio Webpage</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Special+Elite&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Special+Elite&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" /></noscript>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-dot"></div>
+  <div id="scroll-progress"></div>
+  <div id="toast"></div>
+
+  <div id="loader">
+    <div class="loader-inner">
+      <div id="loader-text">Printing the Paper...</div>
+      <div class="loader-bar"><div id="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <div id="page">
+
+    <header class="masthead">
+      <div class="masthead-meta">
+        <span id="date-display"></span>
+        <span class="meta-divider">✦</span>
+        <span>Surabaya, Indonesia</span>
+      </div>
+      <div class="masthead-body">
+        <div class="masthead-title">
+          <h1>Yudhistira <em>Wahyu</em></h1>
+          <div class="masthead-sub">✦ Engineering Water, Shaping the Land, Building the Future ✦</div>
+        </div>
+      </div>
+    </header>
+
+    <nav id="main-nav">
+      <a href="#about"    data-section="about">About</a>
+      <a href="#work"     data-section="work">Portfolio</a>
+      <a href="#skills"   data-section="skills">Skills</a>
+      <a href="#timeline" data-section="timeline">Chronicle</a>
+      <a href="#contact"  data-section="contact">Dispatch</a>
+    </nav>
+
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span class="ticker-item">not Available for Projects</span>
+        <span class="ticker-item">Hydraulic Engineering</span>
+        <span class="ticker-item">Hydrology</span>
+        <span class="ticker-item">Flood Risk Assessment</span>
+        <span class="ticker-item">Irrigation Design</span>
+        <span class="ticker-item">Clean water Distribution Design</span>
+        <span class="ticker-item">not Available for Projects</span>
+        <span class="ticker-item">Hydraulic Engineering</span>
+        <span class="ticker-item">Hydrology</span>
+        <span class="ticker-item">Flood Risk Assessment</span>
+        <span class="ticker-item">Irrigation Design</span>
+        <span class="ticker-item">Clean water Distribution Design</span>
+      </div>
+    </div>
+
+    <section class="section-grid" id="about">
+
+      <div class="col fade-in">
+        <div class="section-label">Portrait</div>
+        <div class="portrait-frame">
+          <div class="portrait-img">
+            <img src="profil.jpeg" alt="Yudhistira" class="portrait-pic" />
+          </div>
+          <div class="portrait-caption">Yudhistira Wahyu Pratama</div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-box">
+            <span class="stat-num" data-target="138" data-decimal="0">0</span>
+            <span class="stat-label">Course Credits</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num" data-target="7" data-decimal="0">0</span>
+            <span class="stat-label">Semester Done</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num" data-target="3" data-decimal="0">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num" data-target="330" data-decimal="2">0</span>
+            <span class="stat-label">GPA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-divider"></div>
+
+      <div class="col col-mid fade-in">
+        <div class="section-label">Biography</div>
+        <h2 class="section-headline">Studying <em>Water & Structures</em> to Serve Society</h2>
+        <div class="ornament">— ◆ —</div>
+        <p class="drop-cap">I am a water building construction engineering student at Institut Teknologi Sepuluh Nopember, specializing in hydraulic and water resources engineering. I am passionate about understanding how water moves through our landscapes — and how we can work with it, not against it.</p>
+        <p>From flood risk assessments to irrigation system design, I approach every project with rigorous analysis and a commitment to sustainable, people-centered solutions. Engineering, to me, is a responsibility as much as it is a discipline.</p>
+        <blockquote>
+          "The engineer has been, and is, a maker of history."
+          <cite>— James Kip Finch</cite>
+        </blockquote>
+        <p>Currently Im at 8th Semester, I am building a portfolio of real-world hydraulic and hydrology projects, and currently doing research for my thesis.</p>
+        <div class="ornament">— ◆ ◆ ◆ —</div>
+      </div>
+
+      <div class="col-divider"></div>
+
+      <div class="col fade-in" id="skills">
+        <div class="section-label">Skills &amp; Expertise</div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>Excel Proficiency</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>GIS</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>Hydrodynamic Modeling</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>AutoCAD</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>3D Modeling (BIM)</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>Multilingual</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+        </div>
+
+        <div class="section-label" style="margin-top:1.8rem;">Curriculum Vitae</div>
+        <div class="cv-box">
+          <div class="cv-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="4" width="32" height="40" rx="2" stroke="currentColor" stroke-width="2"/>
+              <line x1="15" y1="14" x2="33" y2="14" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="15" y1="20" x2="33" y2="20" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="15" y1="26" x2="26" y2="26" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 33 L24 42 M20 38 L24 42 L28 38" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="cv-text">
+            <p class="cv-desc">Download my full curriculum vitae to learn more about my academic background, projects, and competencies.</p>
+          </div>
+          <a href="Yudhistira_cv.pdf" download="Yudhistira_cv.pdf" class="cv-btn">
+            ↓ Download CV
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="full-section" id="work">
+      <div class="section-divider fade-in"><span>Portfolio</span></div>
+      <div class="projects-grid">
+
+        <div class="project-card fade-in" data-proj="0">
+          <div class="project-card-img">
+            <img src="microh.png" alt="Microhydro Powerplant" style="width:100%;height:100%;object-fit:fill"/>
+          </div>
+          <div class="project-card-body">
+            <div class="project-tag">Team Project 1</div>
+            <h3 class="project-title">Microhydro Powerplant</h3>
+            <p>A sustainable energy solution utilizing micro-hydroelectric power generation in rural areas. Located in Tuban Regency.</p>
+            <button class="read-more" onclick="openProject(0)">View Details →</button>
+          </div>
+        </div>
+
+        <div class="project-card fade-in" data-proj="1">
+          <div class="project-card-img">
+            <img src="offshore.png" alt="Seawater Abrasion Control" style="width:100%;height:100%;object-fit:fill"/>
+          </div>
+          <div class="project-card-body">
+            <div class="project-tag">Team Project 2</div>
+            <h3 class="project-title">Seawater Abrasion Control</h3>
+            <p>An innovative approach to offshore engineering challenges, focusing on sustainable solutions for coastal environments. Study case in Maluriwu Island</p>
+            <button class="read-more" onclick="openProject(1)">View Details →</button>
+          </div>
+        </div>
+
+        <div class="project-card fade-in" data-proj="2">
+          <div class="project-card-img">
+            <img src="FinalP.png" alt="Flood Mitigation Project" style="width:100%;height:100%;object-fit:fill"/>
+          </div>
+          <div class="project-card-body">
+            <div class="project-tag">Final Project</div>
+            <h3 class="project-title">Flood Mitigation</h3>
+            <p>Development of a comprehensive flood mitigation strategy, located in Lamongan regency.</p>
+            <button class="read-more" onclick="openProject(2)">View Details →</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="full-section" id="timeline">
+      <div class="section-divider fade-in"><span>Chronicle</span></div>
+      <div class="chronicle-wrap">
+
+        <div class="chronicle-main fade-in">
+          <div class="section-label">Experience &amp; Education</div>
+          <div class="timeline">
+
+            <div class="timeline-item active">
+              <div class="timeline-year">Jul 2025 — Dec 2025</div>
+              <div class="timeline-title">Internship — PU SDA Lamongan</div>
+              <div class="timeline-desc">A member of the Dam Planning Projects' team. Involved in hydraulic design review and site survey activities.</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2022 — Present</div>
+              <div class="timeline-title">B.Eng. Civil Engineering — ITS</div>
+              <div class="timeline-desc">Institut Teknologi Sepuluh Nopember, Surabaya. Focused on Civil Infrastructure Engineering with emphasis on hydraulics, hydrology, and water resources management.</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2019 — 2022</div>
+              <div class="timeline-title">Senior High School — Science Track</div>
+              <div class="timeline-desc">Studied mathematics, physics, and chemistry with a strong focus on analytical problem-solving.</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="chronicle-side fade-in">
+          <blockquote>
+            "Water is the driving force of all nature."
+            <cite>— Leonardo da Vinci</cite>
+          </blockquote>
+
+          <div class="section-label" style="margin-top:2rem;">Tools of the Trade</div>
+          <p style="font-size:0.78rem;color:var(--ink-light);margin-bottom:1rem;">Click any tool to learn more.</p>
+
+          <div class="tag-cloud">
+            <span class="tag tool-tag" data-tool="autocad">AutoCAD</span>
+            <span class="tag tool-tag" data-tool="arcgis">ArcGIS</span>
+            <span class="tag tool-tag" data-tool="hecras">Hec-RAS</span>
+            <span class="tag tool-tag" data-tool="globalmapper">Global Mapper</span>
+            <span class="tag tool-tag" data-tool="delft3d">Delft3D</span>
+            <span class="tag tool-tag" data-tool="geostudio">GeoStudio</span>
+            <span class="tag tool-tag" data-tool="excel">Excel</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="full-section contact-section" id="contact">
+      <div class="section-divider fade-in"><span>Dispatch a Message</span></div>
+      <div class="contact-grid">
+
+        <div class="contact-left fade-in">
+          <div class="section-label">Drop a Line</div>
+          <p style="font-style:italic;margin-bottom:1.5rem;font-size:0.95rem;">"Every great project begins with a single conversation. Let us begin one."</p>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label>Your Name</label>
+                <input type="text" name="from_name" placeholder="Jane Doe" required />
+              </div>
+              <div class="form-field">
+                <label>Electronic Post</label>
+                <input type="email" name="reply_to" placeholder="jane@example.com" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Subject</label>
+              <input type="text" name="subject" placeholder="e.g. New Project Inquiry" />
+            </div>
+            <div class="form-field">
+              <label>Your Message</label>
+              <textarea rows="5" name="message" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="send-btn" id="send-btn">✦ Send Dispatch</button>
+          </form>
+        </div>
+
+        <div class="contact-right fade-in">
+          <div class="section-label">Find Me At</div>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="ci-label">Electronic Mail</div>
+              <div class="ci-value">yudhistiraex@gmail.com</div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-label">Location</div>
+              <div class="ci-value">Surabaya, Indonesia</div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-label">Response Time</div>
+              <div class="ci-value">When the time comes</div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-label">Availability</div>
+              <div class="ci-value available">Temporarily Closed ✦</div>
+            </div>
+          </div>
+          <div class="ornament" style="margin-top:1.5rem;">— ◆ ◆ ◆ —</div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <div class="footer-logo">Y<em>W</em></div>
+      </div>
+      <div class="footer-center">
+        <div class="footer-ornament">✦ ◆ ✦</div>
+        <div class="footer-copy">© <span id="year"></span> Yudhistira Wahyu — All Rights Reserved</div>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/YudhistiraW" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/yudhistira-wahyu/" target="_blank">LinkedIn</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <button id="theme-btn" title="Toggle dark mode">◐</button>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div class="modal-tag" id="modal-tag"></div>
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+      <p id="modal-detail"></p>
+      <div class="tech-tags" id="modal-tags"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="tool-modal">
+    <div class="modal">
+      <button class="modal-close" id="tool-modal-close">✕</button>
+      <div class="tool-modal-header">
+        <div class="tool-modal-icon" id="tool-modal-icon"></div>
+        <div>
+          <div class="modal-tag" id="tool-modal-category"></div>
+          <h2 id="tool-modal-title"></h2>
+        </div>
+      </div>
+      <p id="tool-modal-desc"></p>
+      <p id="tool-modal-use"></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
